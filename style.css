@@ -1,0 +1,176 @@
+* {
+    font-family:'Noto Sans KR', sans-serif;
+
+}
+
+html, body{
+    height:100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    flex:1;
+}
+
+.about_me{
+    margin-top:30px;
+}
+.hello {
+    text-align: center;
+    margin-top:150px;
+}
+
+.hello_image{
+    text-align: center;
+}
+.image_box {
+    width:150px;
+    height:150px;
+    border-radius: 70%;
+    overflow:hidden;
+    display:block;
+    margin:auto;
+    margin-top:150px;
+}
+.profile {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+div.main{
+    width:100%;
+    display:flex;
+}
+div.left_side{
+    width:30%;
+    float:left;
+    box-sizing:border-box;
+    background:lightgray;
+    text-align:center;
+}
+div.right_side{
+    width:70%;
+    float:right;
+    box-sizing:border-box;
+    background:#f5f6f7;
+}
+
+
+.sad{
+    margin-top:50px;
+}
+.sad_img{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+
+.smile_img{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    margin-left:10px;
+    
+}
+
+.hobby_box{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.like_things{
+    margin-top:50px;
+}
+
+.hobby_img{
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+}
+
+.hobby_detail{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.hobby_eat{
+    float:left;
+    margin-right: 50px;
+}
+
+.hobby_tv{
+    float:left;
+    margin-right: 50px;
+}
+
+.hobby_travel{
+    float:left;
+}
+
+.eat {
+    width:200px;
+    height:200px;
+    display:inline;
+}
+
+.tv {
+    width:200px;
+    height:200px;
+    display:inline;
+}
+
+.travel {
+    width:200px;
+    height:200px;
+    display:inline;
+}
+
+
+.end {
+    text-align: center;
+    width:200px;
+    height:200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:100px;
+}
+
+.blog {
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+.instagram{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+.github{
+    width:30px;
+    height:30px;
+}
+
+.achieve {
+    margin-top:100px;
+}
+
+.achieve_title{
+    text-align: center;
+}
+
+ol {
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+}
