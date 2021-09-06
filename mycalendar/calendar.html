@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>나만의 스케줄러 만들기</title>
+    <script type="text/javascript" src="calendar.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    </link>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            buildCalendar();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="table-wrapper">
+            <table class="scriptCalendar">
+                <thead>
+                    <tr>
+                        <td id="prev" onclick="prevCalendar();" style="cursor:pointer;">◀</td>
+                        <td colspan="5" id="yearmonth">
+                            <span id="calYear">YYYY</span>년
+                            <span id="calMonth">MM</span>월
+                        </td>
+                        <td id="next" onclick="nextCalendar();" style="cursor:pointer;">▶</td>
+                    </tr>
+                    <tr>
+                        <td>일</td>
+                        <td>월</td>
+                        <td>화</td>
+                        <td>수</td>
+                        <td>목</td>
+                        <td>금</td>
+                        <td>토</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+        <br>
+        <div class="sub-wrapper">
+            <div><span class="first-cont">&#128198; 선택한 날짜의 년도와 달 </span><span id="showSelectedDay"></span></div>
+            <br>
+            <div id="term">&#11088; 오늘 기준 특정 기간(2주) 표시</div>
+            <div id="showtermDay"></div>
+            <br>
+            <button id="save" onclick="saveCalendar()">&#128190; 저장</button>
+            <div id="showSavedDay"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
