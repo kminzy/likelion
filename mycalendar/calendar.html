@@ -37,16 +37,18 @@
                         <td>토</td>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody class="calendar-body"></tbody>
             </table>
         </div>
 
+        <div class="main-day"></div>
+        <div class="main-date"></div>
 
         <br>
         <div class="sub-wrapper">
             <div><span class="first-cont">&#128198; 선택한 날짜의 년도와 달 </span><span id="showSelectedDay"></span></div>
             <br>
-            <div id="term">&#11088; 오늘 기준 특정 기간(2주) 표시</div>
+            <div id="term">&#11088; 오늘 기준 특정 기간(2주) 표시 <button id="reload" onclick="window.location.reload()">&#127381; 새로고침</button></div>
             <div id="showtermDay"></div>
             <br>
             <button id="save" onclick="saveCalendar()">&#128190; 저장</button>
