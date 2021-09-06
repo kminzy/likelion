@@ -10,6 +10,12 @@ body {
     margin-top:20px;
 }
 
+.sub-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .prev, .next {
     color:white;
     background-color: #FFA07A;
@@ -68,6 +74,14 @@ body {
 
 #weekly>div.active {
     background: #ffdab9;
+}
+
+#showSavedDay {
+    width:700px;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 
