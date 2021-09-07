@@ -84,4 +84,12 @@ body {
     margin: 5px;
 }
 
+.twoWeeks div {
+    height:10px;
+    width:70px;
+    background-color: #e57373;
+    opacity: 0.5;
+}
+
+
 

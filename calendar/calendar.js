@@ -89,7 +89,7 @@ window.onload = function () {
         const mainYear = document.querySelector('.main-year');
         const mainMonth = document.querySelector('.main-month');
         const mainDate = document.querySelector('.main-date');
-        
+
         mainYear.innerHTML = today.getFullYear() + "년";
         mainMonth.innerHTML = today.getMonth() + 1 + "월";
         mainDate.innerHTML = today.getDate() + "일";
@@ -128,6 +128,30 @@ window.onload = function () {
         saveCalendar();
     });
 
+    const twoBtn = document.querySelector('.term-btn');
+    var objArray = new Array();
+
+    twoBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        //let inputValue = today.getFullYear() + "년" + (today.getMonth() + 1) + "월" + today.getDate() + "일";
+        let todayValue = new Date();
+        let a = todayValue.getDate() + 2;
+        let b = todayValue.getDate() + 16;
+
+        let dateObj = document.querySelectorAll('.calendar-body > #weekly > div');
+
+        for (i = a; i <= b; i++) {
+            let dateId = dateObj[i].id;
+            let obj = document.getElementById(`${dateId}`);
+
+            let newText = document.createElement('span');
+            newText.innerHTML = "<br/><br/><div></div>"
+            newText.setAttribute('id', 'twoWeeks');
+            obj.appendChild(newText);
+
+            obj.classList.add('twoWeeks');
+        }
+    });
 
     function resetInsert() {
         let storeObj = localStorage.getItem(currentDate);
@@ -138,7 +162,6 @@ window.onload = function () {
         }
     }
     resetInsert();
-
 
     var objArray2 = new Array();
 
@@ -156,10 +179,7 @@ window.onload = function () {
         objResult2.innerText = objArray2.join(", ");
     }
 
-
-
-
-
+//끝
 }
 
 Date.prototype.format = function () {
