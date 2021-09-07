@@ -8,18 +8,16 @@
     integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
   <script type="text/javascript" src="calendar.js"></script>
   <link rel="stylesheet" type="text/css" href="calendar.css">
-  <title>Calendar</title>
+  <title>나만의 달력 만들기</title>
 </head>
 
 <body>
   <div class="container">
     <div class="calendar_title">
-      <button class="prev">&#60;</button>
+      <button class="prev"><i class="fas fa-angle-left"></i></button>
       <span class="current-year-month"></span>
-      <button class="next">&#62;</button>
+      <button class="next"><i class="fas fa-angle-right"></i></button>
     </div>
-
-
 
     <div class="day-of-week">
       <div class="dayHeader">Sun</div>
@@ -49,8 +47,8 @@
       <br><br>
       <button id="term" class="term-btn">&#11088; 오늘 기준 특정 기간(2주) 표시
       </button>
-      <br><br>
       <button id="save" class="save-btn">&#128190; 저장</button>
+      <!-- <button id="del" class="del-btn">&#10060; 삭제</button> -->
       <button id="reload" onclick="window.location.reload()">&#127381;
         새로고침</button>
       <div id="showSavedDay"></div>

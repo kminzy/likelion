@@ -129,7 +129,6 @@ window.onload = function () {
     });
 
     const twoBtn = document.querySelector('.term-btn');
-    var objArray = new Array();
 
     twoBtn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -139,6 +138,7 @@ window.onload = function () {
         let b = todayValue.getDate() + 16;
 
         let dateObj = document.querySelectorAll('.calendar-body > #weekly > div');
+
 
         for (i = a; i <= b; i++) {
             let dateId = dateObj[i].id;
@@ -166,6 +166,8 @@ window.onload = function () {
     var objArray2 = new Array();
 
     const saveBtn = document.querySelector('.save-btn');
+    //const delBtn = document.querySelector('del-btn');
+
     saveBtn.addEventListener('click', function (e) {
         e.preventDefault();
         let inputValue = today.getFullYear() + "년" + (today.getMonth() + 1) + "월" + today.getDate() + "일";

@@ -4,6 +4,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    margin: 0 5px;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,7 @@ body {
     color:white;
     background-color: #FFA07A;
     border-radius: 50px;
+    padding:5px;
 }
 
 .calendar_title {
@@ -40,6 +44,9 @@ body {
     vertical-align: middle;
     display: inline-block;
 }
+
+.first-cont, .second-cont {font-weight: bold;}
+.term-btn, .save-btn, #reload {padding:10px;}
 
 .calendar-body {
     display: flex;
@@ -80,8 +87,8 @@ body {
     width:700px;
     border:1px solid black;
     border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+    padding: 15px;
+    margin: 20px;
 }
 
 .twoWeeks div {
