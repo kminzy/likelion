@@ -156,9 +156,7 @@ window.onload = function () {
     function resetInsert() {
         let storeObj = localStorage.getItem(currentDate);
         if (storeObj !== null) {
-            // parse 해주기 전에는 localStorage는 string만 가져오니까 parse해준다.
             const parsed = JSON.parse(localStorage.getItem(currentDate));
-            // forEach로 작성되있는 모든 todolist의 항목들을 돌면서 로컬에 저장되어 있는 목록을 화면에 만들어준다.
         }
     }
     resetInsert();
